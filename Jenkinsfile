@@ -3,7 +3,6 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'python --version'
         sh 'echo "I like CI CD"'
       }
     }
