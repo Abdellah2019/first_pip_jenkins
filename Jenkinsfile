@@ -5,7 +5,8 @@ pipeline {
       agent any
       steps {
         sh 'echo "I like CI CD"'
-        sh 'python --version'
+        sh '''pip install python
+python --version'''
       }
     }
 
