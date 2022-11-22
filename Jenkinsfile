@@ -6,6 +6,7 @@ pipeline {
       steps {
         sh 'echo "I like CI CD"'
         sh 'ls -l'
+        sh 'pwd'
       }
     }
 
