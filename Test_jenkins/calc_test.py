@@ -9,4 +9,4 @@ def test_produit():
      
 def test_soustraction():
     output = calc.soustraction(2,4)
-    assert output == -1
+    assert output == -2
