@@ -2,9 +2,10 @@ pipeline {
   agent any
   stages {
     stage('build') {
+      agent any
       steps {
         sh 'echo "I like CI CD"'
-        mail(subject: 'Resultat Build', body: 'le build est b1 passé', to: 'abdellah.hemed@gmail.com', from: 'cheikhelmoustaphea@gmail.com', charset: 'utf-8')
+        sh 'python --version'
       }
     }
 
